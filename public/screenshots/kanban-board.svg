@@ -1,0 +1,111 @@
+<svg width="1400" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .header { fill: #2c3e50; }
+      .header-text { fill: white; font-size: 20px; font-weight: bold; font-family: Arial; }
+      .column-header { fill: white; stroke: #3498db; stroke-width: 2; }
+      .column-title { fill: #2c3e50; font-size: 14px; font-weight: bold; font-family: Arial; }
+      .task-card { fill: #3498db; stroke: #2980b9; stroke-width: 1; }
+      .task-text { fill: white; font-size: 13px; font-family: Arial; }
+      .task-meta { fill: #ecf0f1; font-size: 11px; font-family: Arial; }
+      .footer { fill: #7f8c8d; font-size: 12px; font-family: Arial; }
+    </style>
+  </defs>
+
+  <!-- Header -->
+  <rect class="header" width="1400" height="80"/>
+  <text class="header-text" x="30" y="50">KanbanFlow - Task Management Board</text>
+
+  <!-- Column headers -->
+  <g>
+    <rect class="column-header" x="20" y="100" width="120" height="40"/>
+    <text class="column-title" x="35" y="130">Backlog</text>
+
+    <rect class="column-header" x="150" y="100" width="120" height="40"/>
+    <text class="column-title" x="160" y="130">Assigned</text>
+
+    <rect class="column-header" x="280" y="100" width="120" height="40"/>
+    <text class="column-title" x="295" y="130">In Dev</text>
+
+    <rect class="column-header" x="410" y="100" width="120" height="40"/>
+    <text class="column-title" x="415" y="130">In Review</text>
+
+    <rect class="column-header" x="540" y="100" width="120" height="40"/>
+    <text class="column-title" x="555" y="130">Testing</text>
+
+    <rect class="column-header" x="670" y="100" width="120" height="40"/>
+    <text class="column-title" x="690" y="130">Done</text>
+
+    <rect class="column-header" x="800" y="100" width="120" height="40"/>
+    <text class="column-title" x="820" y="130">Alice</text>
+
+    <rect class="column-header" x="930" y="100" width="120" height="40"/>
+    <text class="column-title" x="950" y="130">Bob</text>
+
+    <rect class="column-header" x="1060" y="100" width="120" height="40"/>
+    <text class="column-title" x="1070" y="130">Charlie</text>
+
+    <rect class="column-header" x="1190" y="100" width="120" height="40"/>
+    <text class="column-title" x="1200" y="130">David</text>
+  </g>
+
+  <!-- Sample tasks in columns -->
+  <g>
+    <!-- Backlog -->
+    <rect class="task-card" x="30" y="160" width="100" height="80"/>
+    <text class="task-text" x="40" y="180">Feature A</text>
+    <text class="task-meta" x="40" y="200">Status: New</text>
+    <text class="task-meta" x="40" y="220">Due: 6/5</text>
+
+    <!-- Assigned -->
+    <rect class="task-card" x="160" y="160" width="100" height="80"/>
+    <text class="task-text" x="170" y="180">Bug Fix</text>
+    <text class="task-meta" x="170" y="200">@Bob</text>
+    <text class="task-meta" x="170" y="220">Due: 6/3</text>
+
+    <!-- In Dev -->
+    <rect class="task-card" x="290" y="160" width="100" height="80"/>
+    <text class="task-text" x="300" y="180">API Dev</text>
+    <text class="task-meta" x="300" y="200">@Alice</text>
+    <text class="task-meta" x="300" y="220">Due: 6/8</text>
+
+    <!-- In Review -->
+    <rect class="task-card" x="420" y="160" width="100" height="80"/>
+    <text class="task-text" x="430" y="180">Review PR</text>
+    <text class="task-meta" x="430" y="200">2 comments</text>
+    <text class="task-meta" x="430" y="220">Due: 6/6</text>
+
+    <!-- Testing -->
+    <rect class="task-card" x="550" y="160" width="100" height="80"/>
+    <text class="task-text" x="560" y="180">QA Test</text>
+    <text class="task-meta" x="560" y="200">@Charlie</text>
+    <text class="task-meta" x="560" y="220">Due: 6/10</text>
+
+    <!-- Done -->
+    <rect class="task-card" x="680" y="160" width="100" height="80"/>
+    <text class="task-text" x="690" y="180">Complete</text>
+    <text class="task-meta" x="690" y="200">Finished!</text>
+    <text class="task-meta" x="690" y="220">6/1/2026</text>
+
+    <!-- Additional task in Alice column -->
+    <rect class="task-card" x="810" y="160" width="100" height="80"/>
+    <text class="task-text" x="820" y="180">Database</text>
+    <text class="task-meta" x="820" y="200">Migration</text>
+    <text class="task-meta" x="820" y="220">Due: 6/12</text>
+  </g>
+
+  <!-- Labels indicator -->
+  <g>
+    <rect fill="#e74c3c" x="30" y="270" width="60" height="20"/>
+    <text class="task-meta" x="40" y="283" fill="white">Urgent</text>
+
+    <rect fill="#9b59b6" x="100" y="270" width="60" height="20"/>
+    <text class="task-meta" x="110" y="283" fill="white">Feature</text>
+
+    <rect fill="#1abc9c" x="170" y="270" width="60" height="20"/>
+    <text class="task-meta" x="180" y="283" fill="white">Backend</text>
+  </g>
+
+  <!-- Footer -->
+  <text class="footer" x="30" y="780">Drag &amp; drop tasks between columns • Click to edit • Labels • Comments • Slack integration</text>
+</svg>
