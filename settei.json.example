@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "email": "alice@example.com",
+      "passwordHash": "$2b$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcg7b3XeKeUxWdeS86xNQMjQ/8."
+    },
+    {
+      "email": "bob@example.com",
+      "passwordHash": "$2b$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcg7b3XeKeUxWdeS86xNQMjQ/8."
+    }
+  ]
+}

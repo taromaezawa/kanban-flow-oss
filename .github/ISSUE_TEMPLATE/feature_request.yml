@@ -1,0 +1,53 @@
+name: Feature Request
+description: Suggest a new feature or enhancement
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement!
+        Please note that this project is scoped to **Kanban-based task management with Slack integration**.
+        Gantt charts and time-tracking are out of scope.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Motivation
+      description: What problem does this feature solve? Why is it needed?
+      placeholder: "I often need to ... but currently there is no way to ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the feature you would like to see.
+      placeholder: "Add a ... button that ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Any alternative solutions or workarounds you have tried.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope Check
+      description: Please confirm the request fits the project scope.
+      options:
+        - label: "This request is related to Kanban task management or Slack integration (not Gantt / time-tracking)."
+          required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Screenshots, mockups, or any other relevant information.
+    validations:
+      required: false

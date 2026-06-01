@@ -1,0 +1,14 @@
+.env.local
+.env*.local
+node_modules/
+.next/
+jooto.db
+next-env.d.ts
+
+# 認証情報（ユーザー定義＋Slack Webhook）。秘密情報のため追跡しない。
+settei.json
+
+# ローカル個人設定（権限許可リスト）は共有しない
+.claude/settings.local.json
+.vercel
+tsconfig.tsbuildinfo
